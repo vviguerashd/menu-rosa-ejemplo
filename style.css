@@ -1,0 +1,61 @@
+.flex-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header, .footer {
+    background-color: #ffcccb; /* Color rosado para el header y footer */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .navbar {
+    background-color: #add8e6; /* Color azul claro para la barra de navegación */
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .main-content {
+    background-color: #90ee90; /* Color verde claro para el contenido principal */
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .sidebar {
+    background-color: #f0e68c; /* Color amarillo claro para la barra lateral */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .flex-layout {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .header {
+      flex-basis: 100%;
+    }
+  
+    .navbar {
+      flex-basis: 100%;
+    }
+  
+    .main-content {
+      flex: 2;
+      order: 2;
+    }
+  
+    .sidebar {
+      flex: 1;
+      order: 1;
+    }
+  
+    .footer {
+      flex-basis: 100%;
+      order: 3;
+    }
+  }
+  
